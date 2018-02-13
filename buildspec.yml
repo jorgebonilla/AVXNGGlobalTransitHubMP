@@ -1,0 +1,19 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - echo Installing Taskcat...
+      - curl -s https://raw.githubusercontent.com/aws-quickstart/taskcat/master/installer/pip/pip3-install-master| python -E
+  build:
+    commands:
+      - echo Entering the build phase...
+      - echo Running taskcat
+      - taskcat -c ci/config.yml
+  post_build:
+    commands:
+      - echo Entering the post_build phase...
+artifacts:
+  files:
+    - aviatrix*.template
+  base-directory: templates
