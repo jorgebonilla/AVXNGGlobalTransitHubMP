@@ -4,24 +4,24 @@
         "ParameterValue": "AviatrixDemo"
     },
     {
-        "ParameterKey": "VPCID",
-        "ParameterValue": "vpc-afdee5d7"
+        "ParameterKey": "VPCCIDR",
+        "ParameterValue": "10.0.0.0/16"
     },
     {
-        "ParameterKey": "PublicSubnet1",
-        "ParameterValue": "subnet-df6ff7f0"
-    },
-    {
-        "ParameterKey": "PublicSubnet2",
-        "ParameterValue": "subnet-5f705114"
+        "ParameterKey": "AvailabilityZones",
+        "ParameterValue": "$[taskcat_genaz_2]"
     },
     {
         "ParameterKey": "PublicSubnet1CIDR",
-        "ParameterValue": "10.0.0.0/24"
+        "ParameterValue": "10.0.10.0/24"
     },
     {
         "ParameterKey": "PublicSubnet2CIDR",
-        "ParameterValue": "10.0.1.0/24"
+        "ParameterValue": "10.0.20.0/24"
+    },
+    {
+        "ParameterKey": "AvailabilityZones",
+        "ParameterValue": "$[taskcat_genaz_2]"
     },
     {
         "ParameterKey": "AdminEmail",
@@ -34,6 +34,14 @@
     {
         "ParameterKey": "ControllerSize",
         "ParameterValue": "t2.large"
+    },
+    {
+        "ParameterKey": "LicenseModel",
+        "ParameterValue": "LicenseIncluded"
+    },
+    {
+        "ParameterKey": "LicenseKey",
+        "ParameterValue": ""
     },
     {
         "ParameterKey": "HubGWSize",
@@ -62,5 +70,13 @@
     {
         "ParameterKey": "OtherAccountRoleEC2",
         "ParameterValue": ""
+    },
+    {
+        "ParameterKey": "QSS3BucketName",
+        "ParameterValue": "quickstart-reference"
+    },
+    {
+        "ParameterKey": "QSS3KeyPrefix",
+        "ParameterValue": "microsoft/activedirectory/latest/"
     }
 ]
